@@ -7,5 +7,10 @@ public class Cachorro extends Animal {
 		System.out.println("Au Au");
 
 	}
+	
+	public void morder() {
+		System.out.println("Nhac nhac");
+
+	}
 
 }

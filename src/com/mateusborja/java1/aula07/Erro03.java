@@ -1,4 +1,4 @@
-package com.mateusborja.aula07;
+package com.mateusborja.java1.aula07;
 
 public class Erro03 {
 	

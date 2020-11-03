@@ -1,4 +1,4 @@
-package com.mateusborja.aula09;
+package com.mateusborja.java1.aula09;
 
 public class Gato extends Animal {
 	

@@ -1,4 +1,4 @@
-package com.mateusborja.aula06;
+package com.mateusborja.java1.aula06;
 
 public class Argumentos {
 	

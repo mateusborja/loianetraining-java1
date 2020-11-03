@@ -1,7 +1,7 @@
 /*
  * aula 05
  */
-package com.mateusborja.aula05;
+package com.mateusborja.java1.aula05;
 
 public class OlaMundo {
 

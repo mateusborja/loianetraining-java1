@@ -1,3 +1,6 @@
+/* java if and else encadeados, multiplos (controle de decisão ou estrutura condicional)
+ * se, se nao - if, if else
+ */
 package com.mateusborja.java1.aula14;
 
 import java.util.Locale;

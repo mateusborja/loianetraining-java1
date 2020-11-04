@@ -1,3 +1,6 @@
+/* java if (controle de decisão ou estrutura condicional)
+ * se - if
+ */
 package com.mateusborja.java1.aula14;
 
 import java.util.Scanner;

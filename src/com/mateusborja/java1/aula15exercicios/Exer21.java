@@ -15,7 +15,7 @@ public class Exer21 {
 		double descontoGalosina = 0;
 		double valorGasolina = 2.50;
 		double valorAlcool = 1.90;
-		double total = 0.0;
+		double valorSemDesconto = 0.0;
 		double valorDesconto = 0.0;
 		double valorPago = 0.0;
 
@@ -41,9 +41,9 @@ public class Exer21 {
 				gasolina = false;
 			}
 
-		}
+			valorSemDesconto = litrosVendidos * valorAlcool;
 
-		if (tipoCombustivel.equalsIgnoreCase("G")) {
+		} else if (tipoCombustivel.equalsIgnoreCase("G")) {
 
 			if (litrosVendidos <= 20.0) {
 				descontoGalosina = 4.0;
@@ -56,20 +56,19 @@ public class Exer21 {
 				alcool = false;
 			}
 
+			valorSemDesconto = litrosVendidos * valorGasolina;
 		}
 
 		if (gasolina == true) {
-			total = litrosVendidos * valorGasolina;
-			valorDesconto = (total / 100) * descontoGalosina;
-			valorPago = total - valorDesconto;
+			valorDesconto = (valorSemDesconto / 100) * descontoGalosina;
+			valorPago = valorSemDesconto - valorDesconto;
 
 			System.out.printf("%nValor pago: R$ %.2f%n", valorPago);
 		}
 
 		if (alcool == true) {
-			total = litrosVendidos * valorAlcool;
-			valorDesconto = (total / 100) * descontoGalosina;
-			valorPago = total - valorDesconto;
+			valorDesconto = (valorSemDesconto / 100) * descontoAlcool;
+			valorPago = valorSemDesconto - valorDesconto;
 			System.out.printf("%nValor pago: R$ %.2f%n", valorPago);
 
 		}

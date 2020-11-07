@@ -19,18 +19,18 @@ public class Exer22 {
 		double precoKgMaca = 0;
 
 		if (qtdeMorango <= 5) {
-			precoKgMorango = 2.5;
+			precoKgMorango = 8.0;
 
 		} else {
-			precoKgMorango = 2.2;
+			precoKgMorango = 0.0;
 
 		}
 
 		if (qtdeMaca <= 5) {
-			precoKgMaca = 1.8;
+			precoKgMaca = 6.;
 
 		} else {
-			precoKgMaca = 1.5;
+			precoKgMaca = 4.5;
 
 		}
 
@@ -43,7 +43,7 @@ public class Exer22 {
 			precoTotal = precoParcial - (precoParcial / 100) * 10.0;
 		}
 
-		System.out.printf("%nPreço Total R$ %.2f%n", precoTotal + ".");
+		System.out.printf("%nPreço Total R$ %.2f.%n", precoTotal);
 		sc.close();
 
 	}

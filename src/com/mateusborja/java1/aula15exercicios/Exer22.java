@@ -34,6 +34,8 @@ public class Exer22 {
 
 		}
 
+		
+		
 		double precoTotalMorango = qtdeMorango * precoKgMorango;
 		double precoTotalMaca = qtdeMaca * precoKgMaca;
 		double precoParcial = precoKgMorango + precoTotalMaca;

@@ -1,4 +1,4 @@
-//aula 24 - execicio 02
+//aula 24 - execicio 02 - classe de definicao
 package com.mateusborja.java1.aula24exercicios;
 
 public class Livro {

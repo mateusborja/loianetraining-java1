@@ -1,4 +1,4 @@
-//aula 24 - execicio 01
+ //aula 24 - execicio 01 - classe de definicao e comportamentos com metodos get e set
 package com.mateusborja.java1.aula24exercicios;
 
 public class Lampada {

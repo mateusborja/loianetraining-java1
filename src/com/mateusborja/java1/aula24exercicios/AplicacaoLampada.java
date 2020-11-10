@@ -1,4 +1,4 @@
-//aula 24 - execicio 01
+//aula 24 - execicio 01 - classe de teste
 package com.mateusborja.java1.aula24exercicios;
 
 public class AplicacaoLampada {

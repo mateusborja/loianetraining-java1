@@ -1,4 +1,4 @@
-//aula 24 - execicio 03
+//aula 24 - execicio 03 - classe de teste
 package com.mateusborja.java1.aula24exercicios;
 
 public class AplicacaoLivroLivraria {
@@ -16,12 +16,10 @@ public class AplicacaoLivroLivraria {
 		
 		livro.preco = 45.54;
 		
+		System.out.println("Preço dp Livro = R$ " + livro.preco);
+		System.out.println("Nome do Autor = " + livro.autor);
+
+		
 	}
 	
-	
-	
-
-	
-	
-
 }

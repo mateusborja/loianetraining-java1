@@ -6,7 +6,7 @@ public class Carro {
 	String modelo;
 	int numPassageiros;
 	double capCombustivel;
-	double consCombustivel;
+	double consCombustivel; // atributos estao com modificador default visto apenas no pacote
 
 	public Carro() {
 		System.out.println("Classe carro foi instanciada");
@@ -18,6 +18,7 @@ public class Carro {
 		marca = marca;
 		modelo = modelo;
 		numPassageiros = numPassageiros;
+		
 	}
 
 }

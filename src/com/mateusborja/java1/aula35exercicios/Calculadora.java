@@ -1,4 +1,4 @@
-//java 1 aula 35 exercicios - exercicio 01 - fibonacci - classe def
+//java 1 aula 35 exercicios - exercicio 01 - fibonacci - classe def.
 package com.mateusborja.java1.aula35exercicios;
 
 public class Calculadora {

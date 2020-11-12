@@ -42,7 +42,7 @@ public class Lampada {
 
 	public void desligar() {
 		setLigada(false);
-		System.out.println("Desligar!");
+		System.out.println("Deslsigar!");
 	}
 
 	public void mostrarEstado() {

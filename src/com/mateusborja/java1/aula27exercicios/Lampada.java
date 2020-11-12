@@ -15,15 +15,15 @@ public class Lampada {
 
 	boolean ligada;
 
-	public void ligar() {
+	void ligar() {
 		ligada = true;
 	}
 
-	public void desligar() {
+	void desligar() {
 		ligada = false;
 	}
 
-	public void mostrarEstado() {
+	void mostrarEstado() {
 		if (ligada) {
 			System.out.println("Lampada ligada.");
 		} else {
@@ -32,7 +32,7 @@ public class Lampada {
 		}
 	}
 
-	public void mudarEstado() {
+	void mudarEstado() {
 		if (ligada) {
 			desligar();
 			System.out.println("A lampada foi desligada!");

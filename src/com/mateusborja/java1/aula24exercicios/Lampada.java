@@ -14,7 +14,7 @@ public class Lampada {
 	double valorLampada;
 	double valorTotal;
 
-	public String getModelo() {
+	String getModelo() {
 		return modelo;
 	}
 

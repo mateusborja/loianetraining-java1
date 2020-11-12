@@ -2,7 +2,8 @@
 package com.mateusborja.java1.aula33;
 
 public class MinhaCalculadora {
-	
+
+	private int[] vetInteiros;
 	
 	public int soma(int num1, int num2) {
 		return num1 + num2;
@@ -19,10 +20,12 @@ public class MinhaCalculadora {
 			total += vetorInteiros[i];
 
 		}
-		
+
 		return total;
 	}
 	
-	
+	public void setVetInteiros(int[] vetInteiros) {
+		this.vetInteiros = vetInteiros;
+	}
 
 }

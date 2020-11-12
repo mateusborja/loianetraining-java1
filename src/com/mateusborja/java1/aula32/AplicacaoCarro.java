@@ -1,4 +1,4 @@
-//java 1 loiane - aula 32 (metodos get e set) - classe teset
+//java 1 loiane - aula 32 (metodos get e set) - classe teste
 package com.mateusborja.java1.aula32;
 
 public class AplicacaoCarro {

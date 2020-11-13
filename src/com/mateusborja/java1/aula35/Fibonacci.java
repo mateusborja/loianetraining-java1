@@ -6,7 +6,7 @@
 
 package com.mateusborja.java1.aula35;
 
-public class Fabonacci {
+public class Fibonacci {
 
 	public static int fabonacci(int num) {
 
@@ -22,13 +22,13 @@ public class Fabonacci {
 
 	public static void main(String[] args) {
 
-		fb1 = Fabonacci.fabonacci(5);
+		fb1 = Fibonacci.fabonacci(5);
 		System.out.println(fb1);
 
 		// serie fabonacci
 		System.out.print("seq fabonacci 10 primeiros =");
 		for (int i = 0; i < 10; i++) {
-			System.out.print(" " + Fabonacci.fabonacci(i));
+			System.out.print(" " + Fibonacci.fabonacci(i));
 
 		}
 

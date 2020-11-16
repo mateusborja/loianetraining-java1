@@ -4,7 +4,7 @@ public class Matrizes {
 
 	public static void main(String[] args) {
 
-		double[][] notasAlunos = new double[30][4];
+		double[][] notasAlunos = new double[4][4];
 
 		notasAlunos[0][0] = 10;
 		notasAlunos[0][1] = 7;
@@ -26,7 +26,16 @@ public class Matrizes {
 		notasAlunos[3][2] = 7;
 		notasAlunos[3][3] = 9;
 
-		System.out.println(notasAlunos[1][2]);
+
+		int i, j;
+		for (i = 0; i < notasAlunos.length; i++) {
+			for (j = 0; j < notasAlunos.length; j++) {
+
+				System.out.print(" " + notasAlunos[i][j]);
+
+			}
+
+		}
 
 	}
 

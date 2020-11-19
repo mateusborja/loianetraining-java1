@@ -21,7 +21,7 @@ public class AplicacaoContato {
 
 		System.out.println(contato.getNome());
 
-		// Criando objt Endereco
+		// Criando objt endereco
 		Endereco endereco = new Endereco();
 
 		endereco.setRua("Rua Major Eustaquio");
@@ -40,18 +40,35 @@ public class AplicacaoContato {
 
 		}
 
-		// Criando objt Telefone
+		// Criando objt telefone1
 		Telefone telefone1 = new Telefone();
 
 		telefone1.setTipo("Casa");
 		telefone1.setDdd("092");
 		telefone1.setNumero("3227 8909");
 
-		// setando objt endereco ao met da classe Contato
-		contato.setTelefone(telefone1);
-		if (contato != null && contato.getTelefone() != null) {
-			System.out.println(contato.getTelefone().getTipo() + " - " + contato.getTelefone().getDdd() + " "+ contato.getTelefone().getNumero());
-		}
+		// setando objt telefone ao met da classe Contato
+//		contato.setTelefone(telefone1);
+//		if (contato != null && contato.getTelefone() != null) {
+//			System.out.println(contato.getTelefone().getTipo() + " - " + contato.getTelefone().getDdd() + " "+ contato.getTelefone().getNumero());
+//		}
+//		
+		
+		
+		//Criando objt telefone2
+		Telefone telefone2 = new Telefone();
+		
+		telefone2.setTipo("Celular");
+		telefone2.setDdd("092");
+		telefone2.setNumero("92 98221 80 78");
+		
+		//setando objt telefone ao met da classe Contato
+		Telefone[] telefones = new Telefone[2];
+		
+		telefones[0] = telefone1;
+		telefones[1] = telefone2;
+		
+		
 		
 		
 

@@ -36,7 +36,7 @@ public class Agenda {
 
 	//metodo que obtem as informações da agenda
 	public String obterInfo() {
-		String info = "Nome: " + nome + "\n";
+		String info = "Nome da agenda: " + nome + "\n";
 
 		if (contatos != null) {
 			for (Contato c : contatos) {

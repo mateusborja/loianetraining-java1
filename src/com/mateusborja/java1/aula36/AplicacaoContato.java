@@ -41,7 +41,6 @@ public class AplicacaoContato {
 		}
 
 		// Criando objt Telefone
-
 		Telefone telefone1 = new Telefone();
 
 		telefone1.setTipo("Casa");
@@ -49,9 +48,9 @@ public class AplicacaoContato {
 		telefone1.setNumero("3227 8909");
 
 		// setando objt endereco ao met da classe Contato
-		// contato.setTelefone(telefone1);
+		contato.setTelefone(telefone1);
 		if (contato != null && contato.getTelefone() != null) {
-			System.out.println(contato.getTelefone().getNumero());
+			System.out.println(contato.getTelefone().getTipo() + " - " + contato.getTelefone().getDdd() + " "+ contato.getTelefone().getNumero());
 		}
 		
 		

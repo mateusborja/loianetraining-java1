@@ -14,7 +14,7 @@ public class Exer01 {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Entre com nome da agenda");
+		System.out.print("nome da agenda: ");
 		String nome = sc.nextLine();
 
 		Agenda agenda = new Agenda(nome);
@@ -29,15 +29,15 @@ public class Exer01 {
 			System.out.println("informacoes do contato " + (i + 1));
 
 			Contato c = new Contato();
-			System.out.println("nome: ");
+			System.out.print("nome: ");
 			nome = sc.nextLine();
 			c.setNome(nome);
 			
-			System.out.println("telefone: ");
+			System.out.print("telefone: ");
 			String telefone = sc.nextLine();
 			c.setTelefone(telefone);
 			
-			System.out.println("email: ");
+			System.out.print("email: ");
 			String email = sc.nextLine();
 			c.setEmail(email);
 			

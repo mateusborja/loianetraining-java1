@@ -16,11 +16,10 @@ public class AplicacaoContato {
 		Contato contato = new Contato();
 
 		contato.setNome("Mateus Borja");
-		//contato.setEndereco("Rua Tucano n. 09");
-		contato.setTelefone("92 98221 80 78");
+		// contato.setEndereco("Rua Tucano n. 09");
+		// contato.setTelefone("92 98221 80 78");
 
 		System.out.println(contato.getNome());
-		System.out.println(contato.getTelefone());
 
 		// Criando objt Endereco
 		Endereco endereco = new Endereco();
@@ -34,11 +33,25 @@ public class AplicacaoContato {
 		// setando objt endereco ao met da classe Contato
 		contato.setEndereco(endereco);
 
-		// verificacao de null excpetion 
+		// verificacao de null excpetion
 		if (contato != null && contato.getEndereco() != null) {
 			System.out.println(contato.getEndereco().getRua() + " " + contato.getEndereco().getNumero() + " "
 					+ contato.getEndereco().getCidade() + " - " + contato.getEndereco().getCep());
 
+		}
+
+		// Criando objt Telefone
+
+		Telefone telefone1 = new Telefone();
+
+		telefone1.setTipo("Casa");
+		telefone1.setDdd("092");
+		telefone1.setNumero("3227 8909");
+
+		// setando objt endereco ao met da classe Contato
+		// contato.setTelefone(telefone1);
+		if (contato != null && contato.getTelefone() != null) {
+			System.out.println(contato.getTelefone().getNumero());
 		}
 		
 		

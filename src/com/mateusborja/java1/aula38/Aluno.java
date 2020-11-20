@@ -12,7 +12,6 @@ public class Aluno extends Pessoa {
 	private String[] notas;
 
 	public Aluno() {
-		super();
 	}
 
 	public Aluno(String nome, String endereco, String telefone, String curso) {

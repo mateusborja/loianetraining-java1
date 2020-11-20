@@ -15,21 +15,24 @@ public class AplicacaoPessoa {
 
 		aluno1.setNome("joao");
 		aluno1.setCpf("xxx.xxxx");
-	
 
 		if (aluno != null && aluno1 != null) {
 			System.out.println(aluno.getNome() + " e " + aluno1.getNome());
 		}
 
-		Aluno[] notas = new Aluno[1];
-	
-		
-		 
-		
-	
+		Aluno[] notas = new Aluno[4];
+		aluno.setNotas(new double[] { 1, 2, 3, 4 });
+		System.out.println(aluno.getNotas());
+			
 
+		//System.out.println(aluno.toString() + aluno.getNotas());
 
-		System.out.println(aluno.toString());
+		for (Aluno n : notas) {
+			if (aluno != null && aluno.getNotas() != null) {
+				//System.out.println("Notas: "  + aluno.getNotas());
+
+			}
+		}
 
 	}
 

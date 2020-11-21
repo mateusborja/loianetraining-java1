@@ -24,7 +24,7 @@ public class Exer02 {
 			return 1;
 		}
 
-		return num + somatorio(num - 1);
+		return num + somatorio(num - 1); // ou somatorio(num-1) + num;
 	}
 
 	public static void main(String[] args) {

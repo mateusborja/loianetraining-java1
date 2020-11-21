@@ -20,12 +20,11 @@ public class AplicacaoPessoa {
 			System.out.println(aluno.getNome() + " e " + aluno1.getNome());
 		}
 
+		System.out.println(aluno.toString());
+
 		Aluno[] notas = new Aluno[4];
 		aluno.setNotas(new double[] { 1, 2, 3, 4 });
-		System.out.println(aluno.getNotas());
-			
 
-		//System.out.println(aluno.toString() + aluno.getNotas());
 
 		for (Aluno n : notas) {
 			if (aluno != null && aluno.getNotas() != null) {

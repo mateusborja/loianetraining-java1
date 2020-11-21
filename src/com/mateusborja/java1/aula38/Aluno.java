@@ -9,7 +9,7 @@ package com.mateusborja.java1.aula38;
 public class Aluno extends Pessoa {
 
 	private String curso;
-	private String[] notas;
+	private double[] notas;
 
 	public Aluno() {
 	}
@@ -28,11 +28,11 @@ public class Aluno extends Pessoa {
 		this.curso = curso;
 	}
 
-	public String[] getNotas() {
+	public double[] getNotas() {
 		return notas;
 	}
 
-	public void setNotas(String[] notas) {
+	public void setNotas(double[] notas) {
 		this.notas = notas;
 	}
 
@@ -46,10 +46,11 @@ public class Aluno extends Pessoa {
 		// TODO
 		return true;
 	}
+	
 
 	@Override
 	public String toString() {
-		return super.toString() + "Curso: " + getCurso() +  ", " + "Notas: " + getNotas() + "\n";
+		return super.toString() + "Curso: " + getCurso() + ", " + "Notas: " + getNotas() + ", " + "\n";
 
 	}
 

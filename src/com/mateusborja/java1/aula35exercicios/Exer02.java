@@ -3,15 +3,14 @@
  * @author Mateus Borja // UX Designer • 3D Artist • Developer
  * at www.mateusborja.life
  */
-
 //java aula 35 exer02 somatorio de um numero
+
 //somatorio
 // 5 = 5 + 4 + 3 + 2 + 1 ou 5 + somatorio(4)
 // 4 = 4 + 3 + 2 + 1 ou 4 + somatorio(3)
 // 3 = 3 + 2 + 1 ou 3 + somatorio(2)
 // 2 = 2 + 1 ou 2 + somatorio(1)
 // 1 = 1 
-
 
 package com.mateusborja.java1.aula35exercicios;
 
@@ -21,7 +20,7 @@ public class Exer02 {
 
 	public static int somatorio(int num) {
 
-		if (num == 0) {
+		if (num == 1) {
 			return 1;
 		}
 
@@ -35,13 +34,15 @@ public class Exer02 {
 		System.out.print("digite um numero: ");
 		int num = sc.nextInt();
 
-		System.out.print("somatorio de " + num + " é: " + somatorio(num) + " ");
-		
+		System.out.print("somatório de " + num + " é: " + somatorio(num) + " ");
+
 		System.out.println();
 		System.out.println();
-		for (int i = 1; i < 10; i++) {
-			System.out.println("somatorio de " + i + " é: " + somatorio(i));
-			
+
+		int x = 1;
+		while (x <= 5) {
+			System.out.println("somatório de " + x + " é: " + somatorio(x));
+			x++;
 		}
 
 		sc.close();

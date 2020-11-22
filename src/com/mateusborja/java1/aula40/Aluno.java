@@ -9,7 +9,7 @@ package com.mateusborja.java1.aula40;
 public class Aluno extends Pessoa {
 
 	private String curso;
-	private double[] notas;
+	private static double[] notas;
 
 	public Aluno() {
 	}

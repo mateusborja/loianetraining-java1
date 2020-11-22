@@ -13,12 +13,11 @@ public class AplicacaoPessoa {
 		Pessoa pessoa = new Pessoa();
 		Pessoa aluno = new Aluno();
 		Pessoa professor = new Professor();
-		
 
 		pessoa.setEndereco("Rua 1, num1");
 		aluno.setEndereco("Rua 2, num2");
 		professor.setEndereco("Rua 3, num3");
-		
+
 		System.out.println(pessoa.obterEquiquetaEndereco());
 		System.out.println(aluno.obterEquiquetaEndereco());
 		System.out.println(professor.obterEquiquetaEndereco());

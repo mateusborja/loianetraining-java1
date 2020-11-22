@@ -3,7 +3,7 @@
  * @author Mateus Borja // UX Designer • 3D Artist • Developer
  * at www.mateusborja.life
  */
-//java 1 aula 37 heranca - classe def
+//java 1 aula 40 sobrecarga polimorfismo - classe def
 package com.mateusborja.java1.aula40;
 
 public class Aluno extends Pessoa {

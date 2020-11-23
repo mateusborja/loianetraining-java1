@@ -26,16 +26,27 @@ public class Aluno extends Pessoa {
 	public void setNotas(double[] notas) {
 		this.notas = notas;
 	}
-	
+
 	public double calcularMedia() {
-		//TODO
+		// TODO
 		return 0;
-		
+
 	}
-	
+
 	public boolean verificarAprovado() {
-		//TODO
+		// TODO
 		return true;
+	}
+
+	public String obterEtiqueta() {
+
+		String s = "Curso: " + this.curso + "\nNotas: ";
+
+		for (double c : notas) {
+			s += c + " ";
+		}
+
+		return s;
 	}
 
 }

@@ -10,5 +10,7 @@ package com.mateusborja.java1.aula44;
 public abstract class Ave extends Animal  {
 	
 	abstract void voar();
+	
+
 
 }

@@ -4,6 +4,7 @@
  * at www.mateusborja.life
  */
 //java 1 loiane aula 44 - interface - classe def
+
 package com.mateusborja.java1.aula44;
 
 public abstract class Animal {

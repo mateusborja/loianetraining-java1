@@ -11,11 +11,11 @@ public class AplicacaoContaBancaria {
 	public static void main(String[] args) {
 
 		ContaBancaria contaSimples = new ContaBancaria();
-
 		contaSimples.setNomeCliente("Conta Simples");
 		contaSimples.setNumConta("111111");
 		contaSimples.depositar(100);
 
+		System.out.println("***TESTE CONTA SIMPLES");
 		System.out.println(contaSimples);
 		realizarSaque(contaSimples, 80);
 		realizarSaque(contaSimples, 30);
@@ -23,11 +23,29 @@ public class AplicacaoContaBancaria {
 		realizarDeposito(contaSimples, 100);
 		verSaldo(contaSimples);
 
+		System.out.println("\n***TESTE CONTA POUPANCA");
+		ContaPoupanca contaPoupanca = new ContaPoupanca();
+		contaPoupanca.setNomeCliente("Conta Poupança");
+		contaPoupanca.setNumConta("22222");
+		contaPoupanca.setDiaRendimento(23);
+		
+		realizarDeposito(contaPoupanca, 100);
+		realizarSaque(contaPoupanca, 50);
+		realizarSaque(contaPoupanca, 70);
+
+		if (contaPoupanca.calcularNovoSaldo(0.05)) {
+			System.out.println("Rendimento Aplicado! Novo Saldo R$ " + contaPoupanca.getSaldo());
+		} else {
+			System.out.println("Hoje não e dia de Rendimento. Novo Saldo não Calculado!");
+		}
+
+		System.out.println(contaPoupanca);
+
 	}
 
-	public static void realizarSaque(ContaBancaria conta, double valor) {
+	private static void realizarSaque(ContaBancaria conta, double valor) {
 		if (conta.sacar(valor)) {
-			System.out.println("Saque de R$ " + valor + " realizado com Sucesso! Seu saldo R$ " + conta.getSaldo());
+			System.out.println("Saque de R$ " + valor + " efetuado com Sucesso! Seu saldo R$ " + conta.getSaldo());
 
 		} else {
 			System.out.println("Saldo insuficiente para sacar R$ " + valor + ". Seu saldo R$ " + conta.getSaldo());
@@ -35,10 +53,10 @@ public class AplicacaoContaBancaria {
 
 	}
 
-	public static void realizarDeposito(ContaBancaria conta, double valor) {
+	private static void realizarDeposito(ContaBancaria conta, double valor) {
 		if (valor > 0) {
 			conta.depositar(valor);
-			System.out.println("Seu depósito de R$ " + valor + ", foi realizado com Sucesso! ");
+			System.out.println("Seu depósito de R$ " + valor + ", foi efetuado com Sucesso! ");
 
 		} else {
 			System.out.println("Valor Incorreto! R$ " + valor);
@@ -46,7 +64,7 @@ public class AplicacaoContaBancaria {
 
 	}
 
-	public static void verSaldo(ContaBancaria conta) {
+	private static void verSaldo(ContaBancaria conta) {
 		System.out.println("Saldo em Conta R$ " + conta.getSaldo());
 
 	}

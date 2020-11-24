@@ -19,8 +19,6 @@ public class AplicacaoContaBancaria {
 		System.out.println(contaSimples);
 		realizarSaque(contaSimples, 80);
 		realizarSaque(contaSimples, 30);
-
-		realizarDeposito(contaSimples, 100);
 		verSaldo(contaSimples);
 
 		System.out.println("\n***TESTE CONTA POUPANCA");
@@ -32,14 +30,27 @@ public class AplicacaoContaBancaria {
 		realizarDeposito(contaPoupanca, 100);
 		realizarSaque(contaPoupanca, 50);
 		realizarSaque(contaPoupanca, 70);
-
+		
+		System.out.println(contaPoupanca);
 		if (contaPoupanca.calcularNovoSaldo(0.05)) {
 			System.out.println("Rendimento Aplicado! Novo Saldo R$ " + contaPoupanca.getSaldo());
 		} else {
 			System.out.println("Hoje não e dia de Rendimento. Novo Saldo não Calculado!");
 		}
 
-		System.out.println(contaPoupanca);
+		
+		System.out.println("\n***TESTE CONTA ESPECIAL");
+		ContaEspecial contaEspecial = new ContaEspecial();
+		contaEspecial.setNomeCliente("Conta Especial");
+		contaEspecial.setNumConta("33333");
+		contaEspecial.setLimite(50);
+		
+		realizarDeposito(contaEspecial, 100);
+		realizarSaque(contaEspecial, 50);
+		realizarSaque(contaEspecial, 70);
+		realizarSaque(contaEspecial, 80);
+
+		System.out.println(contaEspecial);
 
 	}
 

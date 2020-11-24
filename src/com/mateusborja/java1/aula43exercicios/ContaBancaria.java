@@ -32,15 +32,27 @@ public class ContaBancaria {
 		return saldo;
 	}
 
+	public void depositar(double valor) {
+		saldo += valor;
+	}
+
+	public boolean sacar(double valor) {
+
+		if ((this.getSaldo() - valor) >= 0) {
+			saldo -= valor;
+			return true;
+		}
+
+		return false;
+	}
+
 	@Override
 	public String toString() {
 		String s = "\n *** DADOS DA CONTA ***";
-		s = "\nNome do Cliente: " + nomeCliente;
+		s += "\nNome do Cliente: " + nomeCliente;
 		s += "\nNúmero da Conta: " + numConta;
 		s += "\nSaldo da Conta R$ " + saldo;
 		return s;
 	}
-	
-	
 
 }

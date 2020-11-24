@@ -35,6 +35,10 @@ public class ContaBancaria {
 	public void depositar(double valor) {
 		saldo += valor;
 	}
+	
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
 
 	public boolean sacar(double valor) {
 
@@ -48,7 +52,7 @@ public class ContaBancaria {
 
 	@Override
 	public String toString() {
-		String s = "\n *** DADOS DA CONTA ***";
+		String s = "*** DADOS DA CONTA ***";
 		s += "\nNome do Cliente: " + nomeCliente;
 		s += "\nNúmero da Conta: " + numConta;
 		s += "\nSaldo da Conta R$ " + saldo;

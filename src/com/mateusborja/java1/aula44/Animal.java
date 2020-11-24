@@ -8,9 +8,9 @@
 package com.mateusborja.java1.aula44;
 
 public abstract class Animal {
-	
+
 	private String nome;
-	
+
 	abstract void emitirSom();
 
 	public String getNome() {
@@ -20,7 +20,12 @@ public abstract class Animal {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		String s = "**** DADOS DO ANIMAL ****";
+		s += "\nNome: " + this.nome;
+		return s;
+	}
 
 }

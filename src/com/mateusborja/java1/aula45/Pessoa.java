@@ -13,17 +13,9 @@ public class Pessoa {
 	private String endereco;
 	private String telefone;
 	private String cpf;
-
+	
 	public Pessoa() {
-
-	}
-
-	public Pessoa(String nome, String endereco, String telefone) {
 		super();
-		this.nome = nome;
-		this.endereco = endereco;
-		this.telefone = telefone;
-		System.out.println("classe pai pessoa");
 	}
 
 	public String getNome() {
@@ -57,14 +49,18 @@ public class Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	
+
 	public String obterEquiquetaEndereco() {
 		return endereco;
 	}
 
 	@Override
 	public String toString() {
-		return "Nome: " + this.nome + ", " + "Endereço: " + this.endereco + ", " + "Telefone: " + this.telefone + "\n";
+		String s = "\n*** DADOS DA PESSOA ***";
+		s += "\nNome: " + nome;
+		s += "\nEndereço: " + endereco;
+		s += "\nTelefone: " + telefone;
+		return s;
 	}
 
 }

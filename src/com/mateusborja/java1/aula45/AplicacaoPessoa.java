@@ -32,8 +32,6 @@ public class AplicacaoPessoa {
 		Pessoa pessoa = new Pessoa();
 		Aluno aluno5 = new Aluno();
 		Professor prof = new Professor();
-		
-		
 
 		if (pessoa instanceof Pessoa) {
 			System.out.println("É do tipo Pessoa.");

@@ -42,7 +42,7 @@ public class Aluno {
 
 	@Override
 	public String toString() {
-
+		super.toString();
 		String s = "Curso: " + curso + "\nNotas: ";
 		for (double nota : notas) {
 			s += nota + " ";

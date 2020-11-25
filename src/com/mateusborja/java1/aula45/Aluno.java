@@ -9,15 +9,10 @@ package com.mateusborja.java1.aula45;
 public class Aluno extends Pessoa {
 
 	private String curso;
-	private static double[] notas;
+	private double[] notas;
 
 	public Aluno() {
-	}
-
-	public Aluno(String nome, String endereco, String telefone, String curso) {
-		super(nome, endereco, telefone);
-		this.curso = curso;
-		System.out.println("classe filha aluno");
+		super();
 	}
 
 	public String getCurso() {
@@ -57,8 +52,14 @@ public class Aluno extends Pessoa {
 
 	@Override
 	public String toString() {
-		return super.toString() + "Curso: " + getCurso() + ", " + "Notas: " + getNotas() + ", " + "\n";
+		String s = super.toString();
+		s += "\nCurso: " + curso;
+		s += "\nNotas: ";
+		for (double nota : notas) {
+			s += nota + " ";
+		}
 
+		return s;
 	}
 
 }

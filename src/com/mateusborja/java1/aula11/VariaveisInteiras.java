@@ -23,5 +23,4 @@ public class VariaveisInteiras {
 		System.out.println(o + "" + i);
 
 	}
-
 }

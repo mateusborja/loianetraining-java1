@@ -1,0 +1,40 @@
+/*
+ * Copyright (c) 2020.  | All rights reserved
+ * @author Mateus Borja // UX Designer • 3D Artist • Developer
+ * at www.mateusborja.life
+ */
+//java1 aula 50 stacktrace e throwable
+// metodos getMessage() e printStackTrace()
+package com.mateusborja.java1.aula50;
+
+import java.util.Iterator;
+
+public class ExceptionGenerica {
+	
+	public static void main(String[] args) {
+
+		int[] arr1 = { 4, 8, 16, 32, 64, 128 };
+		int[] arr2 = { 2, 0, 4, 8, 0 };
+		
+		for (int i = 0; i < arr2.length; i++) {
+			try {
+				System.out.println(arr1[i] + " / " + arr2[i] + " = " + (arr1[i] / arr2[i]));
+				System.out.println("executando...");
+				
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+				e.printStackTrace();
+
+			} finally {
+				System.out.println("bloco finally");
+				System.out.println();
+			}
+			
+			
+			
+		}
+
+	}
+	
+
+}

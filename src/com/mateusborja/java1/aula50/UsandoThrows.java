@@ -9,7 +9,7 @@ package com.mateusborja.java1.aula50;
 import java.util.Scanner;
 
 public class UsandoThrows {
-
+	
 	public static void main(String[] args) {
 
 		

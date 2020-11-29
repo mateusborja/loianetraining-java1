@@ -21,7 +21,7 @@ public class Finally {
 				System.out.println(arr1[i] + " / " + arr2[i] + " = " + (arr1[i] / arr2[i]));
 
 			} catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
-				System.err.println("catch - erro capturado pelo catch");
+				System.err.println("catch - erro capturado!");
 
 			} finally {
 				System.out.println("Bloco Final! - finally");

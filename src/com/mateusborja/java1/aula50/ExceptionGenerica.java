@@ -7,7 +7,6 @@
 // metodos getMessage() e printStackTrace()
 package com.mateusborja.java1.aula50;
 
-import java.util.Iterator;
 
 public class ExceptionGenerica {
 	

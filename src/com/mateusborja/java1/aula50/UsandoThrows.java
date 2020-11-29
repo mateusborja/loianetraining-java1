@@ -3,10 +3,9 @@
  * @author Mateus Borja // UX Designer • 3D Artist • Developer
  * at www.mateusborja.life
  */
-//java1 aula 50 usando throw
+//java1 aula 50 usando throws
 package com.mateusborja.java1.aula50;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class UsandoThrows {

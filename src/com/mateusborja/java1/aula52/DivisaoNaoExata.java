@@ -3,7 +3,7 @@
  * @author Mateus Borja // UX Designer • 3D Artist • Developer
  * at www.mateusborja.life
  */
-
+//aula 52 exception personalizada - classe def e teste
 package com.mateusborja.java1.aula52;
 
 public class DivisaoNaoExata extends Exception {

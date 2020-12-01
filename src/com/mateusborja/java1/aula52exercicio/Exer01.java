@@ -13,19 +13,7 @@ public class Exer01 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		Agenda agenda = new Agenda();
-		Contato contato = new Contato();
-
-		contato.setNome("Joao");
-		contato.setTelefone("92 93439 43943");
-		contato.setEmail("mail.joao@mail.com");
-
-		try {
-			agenda.adicionarContato(contato);
-
-		} catch (AgendaCheiaException e) {
-			System.out.println(e.getMessage());
-		}
+		Agenda agenda = new Agenda(5);
 
 		int opcao = 1;
 
@@ -45,12 +33,18 @@ public class Exer01 {
 		}
 
 		sc.close();
+		
 
 	}
 
 	public static void exibirAgenda(Agenda agenda) {
 		System.out.println("Contatos da Agenda: ");
-		System.out.println(agenda.toString());
+		if (agenda.toString() == null) {
+			return;
+		} else {
+			System.out.println(agenda.toString());
+			
+		}
 
 	}
 

@@ -14,22 +14,43 @@ public class Exer01 {
 
 		Scanner sc = new Scanner(System.in);
 		Agenda agenda = new Agenda();
+		Contato contato = new Contato();
+
+		contato.setNome("Joao");
+		contato.setTelefone("92 93439 43943");
+		contato.setEmail("mail.joao@mail.com");
+
+		try {
+			agenda.adicionarContato(contato);
+
+		} catch (AgendaCheiaException e) {
+			System.out.println(e.getMessage());
+		}
 
 		int opcao = 1;
 
-		while (opcao != 3) {
+		while (opcao != 4) {
 			opcao = obterOpcaoMenu(sc);
 
 			if (opcao == 1) { // consultar contato
 				consultarContato(sc, agenda);
 
-			} else if (opcao == 2) { // adicionar contato
+			} else if (opcao == 2) { // exibir agenda
+				exibirAgenda(agenda);
+
+			} else if (opcao == 3) { // adicionar contato
 				adicionarContato(sc, agenda);
 
 			}
 		}
 
 		sc.close();
+
+	}
+
+	public static void exibirAgenda(Agenda agenda) {
+		System.out.println("Contatos da Agenda: ");
+		System.out.println(agenda.toString());
 
 	}
 
@@ -60,11 +81,11 @@ public class Exer01 {
 			if (agenda.consultaContatoPorNome(nomeContato) >= 0) {
 				System.out.println("Contato Existe");
 				System.out.println(agenda.toString());
+
 			}
 
 		} catch (ContatoNaoExisteException e) {
 			System.out.println(e.getMessage());
-			
 
 		}
 
@@ -80,19 +101,20 @@ public class Exer01 {
 	public static int obterOpcaoMenu(Scanner sc) {
 
 		boolean entradaValida = false;
-		int opcao = 3;
+		int opcao = 1;
 
 		while (!entradaValida) {
-			System.out.println("Digite a opção Desejada: ");
+			System.out.println("\nDigite a opção Desejada: ");
 			System.out.println("1> Consultar Contato ");
-			System.out.println("2> Adicionar Contato");
-			System.out.println("3> Sair\n");
+			System.out.println("2> Exibir Agenda ");
+			System.out.println("3> Adicionar Contato");
+			System.out.println("4> Sair\n");
 
 			try {
 				String entrada = sc.nextLine();
 				opcao = Integer.parseInt(entrada);
 
-				if (opcao == 1 || opcao == 2 || opcao == 3) {
+				if (opcao == 1 || opcao == 2 || opcao == 3 || opcao == 4) {
 					entradaValida = true;
 				} else {
 					throw new Exception("Entrada inválida!");

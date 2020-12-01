@@ -25,7 +25,7 @@ public class Agenda {
 		}
 
 		if (cheia) {
-			// lancar exception
+			// lancar exception de agenda cheia
 			throw new AgendaCheiaException();
 		}
 	}

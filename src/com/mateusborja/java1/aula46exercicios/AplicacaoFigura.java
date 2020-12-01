@@ -52,29 +52,42 @@ public class AplicacaoFigura {
 		f6.setBase(f1);
 		f6.setNome("Piramide");
 
-		FiguraGeometrica figuras[] = new FiguraGeometrica[6];
+		Retangulo f7 = new Retangulo();
+		f7.setNome("Retangulo");
+		f7.setBase(8);
+		f7.setAltura(10);
+
+		FiguraGeometrica figuras[] = new FiguraGeometrica[7];
 		figuras[0] = f1;
 		figuras[1] = f2;
 		figuras[2] = f3;
 		figuras[3] = f4;
 		figuras[4] = f5;
 		figuras[5] = f6;
+		figuras[6] = f7;
 
-		for (FiguraGeometrica figura : figuras) {
-			System.out.println("\n******************");
-			System.out.println(figura.getNome());
+		try {
 
-			if (figura instanceof Figura2D && figura != null) {
-				Figura2D f2d = (Figura2D) figura;
-				System.out.println("Area: " + dc.format(f2d.calcularArea()) + " m");
+			for (FiguraGeometrica figura : figuras) {
+				System.out.println("\n******************");
+				System.out.println(figura.getNome());
+
+				if (figura instanceof Figura2D && figura != null) {
+					Figura2D f2d = (Figura2D) figura;
+					System.out.println("Area: " + dc.format(f2d.calcularArea()) + " cm.");
+				}
+
+				if (figura instanceof Figura3D && figuras != null) {
+					Figura3D f3d = (Figura3D) figura;
+					System.out.println("Area: " + dc.format(f3d.calcularArea()) + " cm.");
+					System.out.println("Volume: " + dc.format(f3d.calcularVolume()) + " cm3.");
+				}
+
 			}
 
-			if (figura instanceof Figura3D && figuras != null) {
-				Figura3D f3d = (Figura3D) figura;
-				System.out.println("Area: " + dc.format(f3d.calcularArea()) + " m.");
-				System.out.println("Volume: " + dc.format(f3d.calcularVolume()) + " m.");
-			}
-
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("**** OPERACAO REALIZADA COM SUCESSO ****");
+			// TODO: handle exception
 		}
 
 	}

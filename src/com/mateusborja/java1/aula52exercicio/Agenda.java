@@ -35,15 +35,11 @@ public class Agenda {
 			if (contatos[i] != null) {
 				if (contatos[i].getNome().equalsIgnoreCase(nome)) {
 					return i;
-
 				}
-
 			}
-
 		}
 		// lancar exception de contato nao existe
 		throw new ContatoNaoExisteException(nome);
-
 	}
 
 	@Override

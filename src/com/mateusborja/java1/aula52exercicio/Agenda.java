@@ -9,9 +9,16 @@ package com.mateusborja.java1.aula52exercicio;
 public class Agenda {
 
 	private Contato[] contatos;
+	private int tamanho;
 
-	public Agenda() {
-		contatos = new Contato[5];
+	public Agenda(int capacidade) {
+		contatos = new Contato[capacidade];
+		this.tamanho = 0;
+
+	}
+
+	public int getTamanho() {
+		return tamanho;
 	}
 
 	public void adicionarContato(Contato c) throws AgendaCheiaException {
@@ -19,6 +26,7 @@ public class Agenda {
 		for (int i = 0; i < contatos.length; i++) {
 			if (contatos[i] == null) {
 				contatos[i] = c;
+				tamanho++;
 				cheia = false;
 				break;
 			}
@@ -47,12 +55,10 @@ public class Agenda {
 		String s = "";
 		for (Contato contato : contatos) {
 			if (contato != null) {
-				s += contato.toString() + "\n";
+				s += contato.toString();
 
 			}
-
 		}
-
 		return s;
 	}
 
